@@ -45,5 +45,7 @@ public class Cell : MonoBehaviour
             cube.SetActive(false);
             gameManger.isCubeTurn = true;
         }
+        
+        gameManger.check();
     }
 }
