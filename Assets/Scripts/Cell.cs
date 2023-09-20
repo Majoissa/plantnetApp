@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
+    public int status; //0: none, 1:sphere, 2:cube
     public GameManager gameManger;
     public GameObject sphere;
     public GameObject cube;
@@ -12,6 +13,7 @@ public class Cell : MonoBehaviour
     {
         sphere.SetActive(false);
         cube.SetActive(false);
+        status = 0;
     }
 
     // Update is called once per frame
@@ -22,13 +24,23 @@ public class Cell : MonoBehaviour
     
     void OnMouseDown()
     {
-        if (gameManger.isCubeTurn == true) {
+        if (cube.activeSelf==true ||  sphere.activeSelf == true)
+        {
+            //nos vamos si cubo y sphere activos
+            Debug.Log("Eips que la cel·la ja està clicada");
+            return;
+        }
+        
+        if (gameManger.isCubeTurn == true)
+        {
+            status = 2;
             cube.SetActive(true);
             sphere.SetActive(false);
             gameManger.isCubeTurn = false;
         }
         else
         {
+            status = 1;
             sphere.SetActive(true);    
             cube.SetActive(false);
             gameManger.isCubeTurn = true;
