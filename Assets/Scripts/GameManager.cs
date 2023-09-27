@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public bool isCubeTurn = false;
-
+    public TextMeshProUGUI label;
     public Cell[] cells;
     // Start is called before the first frame update
     void Start()
     {
-        
+        label.text = "hola";
     }
 
     // Suponiendo que las cells se disponen de la siguiente forma:
