@@ -46,6 +46,6 @@ public class Cell : MonoBehaviour
             gameManger.isCubeTurn = true;
         }
         
-        gameManger.check();
+        gameManger.CheckWinner();
     }
 }

@@ -590,7 +590,7 @@ GameObject:
   - component: {fileID: 546250758}
   - component: {fileID: 546250757}
   m_Layer: 0
-  m_Name: Cell (5)
+  m_Name: Cell 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -608,6 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 1167412198}
   cube: {fileID: 1137033888}
@@ -912,7 +913,7 @@ GameObject:
   - component: {fileID: 717951880}
   - component: {fileID: 717951879}
   m_Layer: 0
-  m_Name: Cell (3)
+  m_Name: Cell 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -930,6 +931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 2065757418}
   cube: {fileID: 355207941}
@@ -1245,7 +1247,7 @@ GameObject:
   - component: {fileID: 933759371}
   - component: {fileID: 933759370}
   m_Layer: 0
-  m_Name: Cell (1)
+  m_Name: Cell 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1263,6 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 2076324376}
   cube: {fileID: 684306915}
@@ -1519,7 +1522,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -1544,8 +1547,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0030072248, y: 0.8489308, z: -0.52847326, w: -0.004839581}
-  m_LocalPosition: {x: -1.058823, y: 3.4388192, z: 2.8956223}
+  m_LocalRotation: {x: 0.70710695, y: 0.00000007357448, z: -0.00000007729068, w: 0.7071067}
+  m_LocalPosition: {x: -1.2739655, y: 8.192343, z: 0.8106038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1565,7 +1568,7 @@ GameObject:
   - component: {fileID: 967740665}
   - component: {fileID: 967740664}
   m_Layer: 0
-  m_Name: Cell (6)
+  m_Name: Cell 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1583,6 +1586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 1049276704}
   cube: {fileID: 1259077479}
@@ -1688,7 +1692,7 @@ GameObject:
   - component: {fileID: 984657169}
   - component: {fileID: 984657168}
   m_Layer: 0
-  m_Name: Cell (8)
+  m_Name: Cell 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1706,6 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 1469230018}
   cube: {fileID: 802694981}
@@ -1916,7 +1921,7 @@ GameObject:
   - component: {fileID: 1114740161}
   - component: {fileID: 1114740160}
   m_Layer: 0
-  m_Name: Cell (4)
+  m_Name: Cell 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1934,6 +1939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 462509676}
   cube: {fileID: 267739186}
@@ -2490,7 +2496,7 @@ GameObject:
   - component: {fileID: 1406537708}
   - component: {fileID: 1406537707}
   m_Layer: 0
-  m_Name: Cell (7)
+  m_Name: Cell 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2508,6 +2514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 1362017332}
   cube: {fileID: 1848450921}
@@ -2734,13 +2741,13 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1481977045}
-  - {fileID: 1114740164}
-  - {fileID: 967740668}
   - {fileID: 933759374}
-  - {fileID: 717951883}
-  - {fileID: 984657172}
   - {fileID: 1644068993}
+  - {fileID: 1114740164}
+  - {fileID: 717951883}
   - {fileID: 546250761}
+  - {fileID: 967740668}
+  - {fileID: 984657172}
   - {fileID: 1406537711}
   m_Father: {fileID: 482578303}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2863,7 +2870,7 @@ GameObject:
   - component: {fileID: 1481977042}
   - component: {fileID: 1481977041}
   m_Layer: 0
-  m_Name: Cell
+  m_Name: Cell 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2881,6 +2888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 740586791}
   cube: {fileID: 45073990}
@@ -2986,7 +2994,7 @@ GameObject:
   - component: {fileID: 1644068990}
   - component: {fileID: 1644068989}
   m_Layer: 0
-  m_Name: Cell (2)
+  m_Name: Cell 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3004,6 +3012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 143d0b5f8d1844d96a12ec88e18b41ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   gameManger: {fileID: 1979785081}
   sphere: {fileID: 1427441200}
   cube: {fileID: 950534983}
@@ -3123,8 +3132,8 @@ Transform:
   m_GameObject: {fileID: 1730570820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.9045, y: -0, z: -0.4605}
+  m_LocalScale: {x: 1.7399678, y: 1, z: 1.874859}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 482578303}
@@ -3336,6 +3345,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCubeTurn: 0
+  cells:
+  - {fileID: 1481977041}
+  - {fileID: 933759370}
+  - {fileID: 1644068989}
+  - {fileID: 1114740160}
+  - {fileID: 717951879}
+  - {fileID: 546250757}
+  - {fileID: 967740664}
+  - {fileID: 984657168}
+  - {fileID: 1406537707}
 --- !u!4 &1979785082
 Transform:
   m_ObjectHideFlags: 0
