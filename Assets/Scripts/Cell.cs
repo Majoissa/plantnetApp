@@ -36,14 +36,14 @@ public class Cell : MonoBehaviour
             status = 2;
             cube.SetActive(true);
             sphere.SetActive(false);
-            gameManger.isCubeTurn = false;
+            gameManger.ChangeTurn();
         }
         else
         {
             status = 1;
             sphere.SetActive(true);    
             cube.SetActive(false);
-            gameManger.isCubeTurn = true;
+            gameManger.ChangeTurn();
         }
         
         gameManger.CheckWinner();

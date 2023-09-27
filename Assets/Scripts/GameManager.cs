@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        label.text = "hola";
+        ChangeTurn();
     }
 
     // Suponiendo que las cells se disponen de la siguiente forma:
@@ -59,18 +59,37 @@ public class GameManager : MonoBehaviour
         // Si todas las celdas están llenas y no hay ganador, entonces es un empate.
         if (isDraw)
         {
-            Debug.Log("¡Es un empate!");
+            label.text = "It's a draw!";
+        }
+    }
+
+    public void ChangeTurn()
+    {
+        isCubeTurn = !isCubeTurn;
+        if (isCubeTurn)
+        {
+            label.text = "Cube's turn...";   
+        }
+        else
+        {
+            label.text = "Sphere's turn...";   
         }
     }
 
     void DeclareWinner(int status)
     {
         if (status == 1)
-            Debug.Log("Spheres han ganado");
+        {
+            label.text = "Sphere is the winner";   
+        }
         else
-            Debug.Log("Cubes han ganado");
+        {
+            label.text = "Cube is the winner";   
+        }
     }
 
+    
+    
     // Update is called once per frame
     void Update()
     {
