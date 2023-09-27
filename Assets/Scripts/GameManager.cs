@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class GameManager : MonoBehaviour
 {
-    public bool isCubeTurn = false;
+    public bool isCubeTurn = true;
     public TextMeshProUGUI label;
     public Cell[] cells;
+    public GameObject restartButton;
     // Start is called before the first frame update
+    
     void Start()
     {
         ChangeTurn();
+        restartButton.SetActive(false);
     }
 
     // Suponiendo que las cells se disponen de la siguiente forma:
@@ -60,6 +65,7 @@ public class GameManager : MonoBehaviour
         if (isDraw)
         {
             label.text = "It's a draw!";
+            restartButton.SetActive(true);
         }
     }
 
@@ -86,6 +92,7 @@ public class GameManager : MonoBehaviour
         {
             label.text = "Cube is the winner";   
         }
+        restartButton.SetActive(true);
     }
 
     
@@ -93,5 +100,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void RestartGame()
+    {
+        Debug.Log("RESTART");
+        SceneManager.LoadScene(0);
     }
 }
