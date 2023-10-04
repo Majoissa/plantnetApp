@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public Cell[] cells;
     public GameObject restartButton;
     // Start is called before the first frame update
-    
+    public AudioClip clipWin;
+    public AudioClip clipDraw;
     void Start()
     {
         ChangeTurn();
@@ -66,6 +67,7 @@ public class GameManager : MonoBehaviour
         {
             label.text = "It's a draw!";
             restartButton.SetActive(true);
+            GetComponent<AudioSource>().PlayOneShot(clipDraw);
         }
     }
 
@@ -93,6 +95,9 @@ public class GameManager : MonoBehaviour
             label.text = "Cube is the winner";   
         }
         restartButton.SetActive(true);
+        
+        GetComponent<AudioSource>().PlayOneShot(clipWin);
+        
     }
 
     
