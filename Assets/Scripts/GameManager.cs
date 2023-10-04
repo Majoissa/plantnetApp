@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI label;
     public Cell[] cells;
     public GameObject restartButton;
+    public GameObject backToMenuButton;
     // Start is called before the first frame update
     public AudioClip clipWin;
     public AudioClip clipDraw;
@@ -17,6 +18,9 @@ public class GameManager : MonoBehaviour
     {
         ChangeTurn();
         restartButton.SetActive(false);
+        backToMenuButton.SetActive(false);
+        int flag = PlayerPrefs.GetInt("AI", 1);
+        Debug.Log("FLAG: "+ flag );
     }
 
     // Suponiendo que las cells se disponen de la siguiente forma:
@@ -66,8 +70,8 @@ public class GameManager : MonoBehaviour
         if (isDraw)
         {
             label.text = "It's a draw!";
-            restartButton.SetActive(true);
-            GetComponent<AudioSource>().PlayOneShot(clipDraw);
+            SetupGameFinished(false);
+            
         }
     }
 
@@ -94,9 +98,8 @@ public class GameManager : MonoBehaviour
         {
             label.text = "Cube is the winner";   
         }
-        restartButton.SetActive(true);
-        
-        GetComponent<AudioSource>().PlayOneShot(clipWin);
+
+        SetupGameFinished(true);
         
     }
 
@@ -110,6 +113,26 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         Debug.Log("RESTART");
+        SceneManager.LoadScene(1);
+    }
+
+    public void BackToMainMenu()
+    {
         SceneManager.LoadScene(0);
+    }
+
+    private void SetupGameFinished(bool winner)
+    {
+        restartButton.SetActive(true);
+        backToMenuButton.SetActive(true);
+        if (winner)
+        {
+            GetComponent<AudioSource>().PlayOneShot(clipWin);
+        }
+        else
+        {
+            GetComponent<AudioSource>().PlayOneShot(clipDraw);    
+        }
+        
     }
 }
